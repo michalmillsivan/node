@@ -9,6 +9,7 @@ async function init() {
     const result = await getUsers()
     // call here to the getUserApi
     console.log(result)
+    
 
 }
 init()
@@ -37,3 +38,6 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     console.error('Error parsing JSON data:', error);
   }
 });
+
+
+const { monitor } = require("./monitor")
